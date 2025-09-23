@@ -31,7 +31,7 @@ view: fct_order_items {
 
   dimension_group: delivered {
     type: time
-    description: "The date/timestamp the line item was created."
+    description: "The date/timestamp the line item was created. Changed description"
     timeframes: [
       raw,
       time,
