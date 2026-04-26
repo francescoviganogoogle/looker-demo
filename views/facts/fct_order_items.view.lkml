@@ -3,7 +3,7 @@ view: fct_order_items {
   view_label: "Order Items"
   label: "Order Items"
 
-  # Step 1: Update id -> order_item_id
+  # ERROR 1: id technical name renamed as order_item_id. This will break an existing Look in the repository. Content validator should find the issue
 
   dimension: order_item_id {
     primary_key: yes
@@ -26,7 +26,7 @@ view: fct_order_items {
     sql: ${TABLE}.created_at ;;
   }
 
-  # Step 2: Add delivered_at dimension_group
+  # ERROR 2: Edit the delivered_at column and remove "_at". The SQL expression is not working. SQL validator should find the issue.
 
 
   dimension_group: delivered {
@@ -42,6 +42,7 @@ view: fct_order_items {
       year
     ]
     sql: ${TABLE}.delivered ;;
+
   }
 
 
