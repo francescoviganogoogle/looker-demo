@@ -10,3 +10,7 @@ id technical name renamed as order_item_id. This will break an existing Look in 
  ### ERROR 2:
 
  Delivered dimension based on a mispelled field (missing _at)The SQL expression is not working. SQL validator should find the issue.
+
+### Tests
+
+Defined tests in in ci_demo model. e.g. orders_items_2021
