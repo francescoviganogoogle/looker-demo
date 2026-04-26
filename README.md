@@ -1,3 +1,3 @@
-# looker-demo
+# Continuos Integration Demo
 
-A Looker project for demos of Spectacles. Built the 'thelook' dataset.
+A Looker project for demos of Continuous Integration. Built on top of the 'thelook' dataset.
